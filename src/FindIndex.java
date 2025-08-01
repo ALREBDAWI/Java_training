@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 //-----------------------------------find index of element in a nonsorted array
-public class findIndex {
+public class FindIndex {
     public static void main(String[] args) {
 
         int[] numbers = {5,1,4,7,3,6,1,2,1,10,2,3,21,15,11};
