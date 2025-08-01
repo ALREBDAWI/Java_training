@@ -19,4 +19,5 @@ public class SumN {
         }
         System.out.println("sum result of numbers between " + n + " and 1 is : " + sumResult);
     }
+
 }
