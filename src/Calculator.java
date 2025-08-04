@@ -42,7 +42,7 @@ public class Calculator {
 
             default:
                     System.out.println("Invalid operation");
-                    return; //stop the program 
+                    return; //stop the program
         }
 
         System.out.println("the result is : " + result);
