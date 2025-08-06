@@ -1,3 +1,5 @@
+package Account;
+
 public class Account {
 
     public Double balance;
@@ -22,5 +24,10 @@ public class Account {
 
     public void balance(){
         System.out.println("your balance is : " + balance);
+    }
+
+    @Override
+    public String toString() {
+        return "Account [balance=" + balance + "]";
     }
 }
