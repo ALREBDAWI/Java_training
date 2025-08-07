@@ -5,7 +5,18 @@ public class Book {
     private String title, author;
     private int numPages;
 
-    //constructor
+    public Book(){ //constructor with default values
+        this.title = "title";
+        this.author = "author";
+        this.numPages = 10;
+    }
+
+    public Book(String pTitle, String pAuthor) { //constructor 2 params
+        this.title = pTitle;
+        this.author = pAuthor;
+    }
+
+    //constructor all params
     public Book(String pTitle, String pAuthor, int pNumPages) {
         this.title = pTitle;
         this.author = pAuthor;
@@ -14,7 +25,7 @@ public class Book {
             this.numPages = pNumPages;
         }else {
             this.numPages = 10; //adding 10 pages minimum
-            System.out.println("Number of pages cant be less than 1");
+            System.out.println("Number of pages cant be less than 1 for " + title);
         }
 
     }
@@ -46,10 +57,13 @@ public class Book {
             this.numPages = pNumPages;
         }else {
             this.numPages = 10; //adding 10 pages minimum
-            System.out.println("Number of pages cant be less than 1");
+            System.out.println("Number of pages cant be less than 1 for " + title);
         }
     }
 
+    public void printDescription() {
+        System.out.println(title + " : " + author + " : " + " Pages " +numPages);
+    }
 
 
 }
