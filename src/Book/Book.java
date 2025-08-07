@@ -5,11 +5,18 @@ public class Book {
     private String title, author;
     private int numPages;
 
-
-    public Book(String pTitle, String pAuthor, int pNumPages) {  //constructor
+    //constructor
+    public Book(String pTitle, String pAuthor, int pNumPages) {
         this.title = pTitle;
         this.author = pAuthor;
-        this.numPages = pNumPages;
+        //condition to assure correct entry
+        if(pNumPages > 0){
+            this.numPages = pNumPages;
+        }else {
+            this.numPages = 10; //adding 10 pages minimum
+            System.out.println("Number of pages cant be less than 1");
+        }
+
     }
 
     //-------------------------------------adding getters
@@ -34,8 +41,13 @@ public class Book {
         this.title = pTitle;
     }
 
-    public void setNumPages(int pNumPages) {
-        this.numPages = pNumPages;
+    public void setNumPages(int pNumPages) { //condition to assure correct entry
+        if(pNumPages > 0){
+            this.numPages = pNumPages;
+        }else {
+            this.numPages = 10; //adding 10 pages minimum
+            System.out.println("Number of pages cant be less than 1");
+        }
     }
 
 
