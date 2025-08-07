@@ -1,3 +1,5 @@
+package MathOps;
+
 import java.util.Scanner;
 //-----------------------------------------find power in java
 public class Power {

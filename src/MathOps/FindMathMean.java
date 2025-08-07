@@ -1,3 +1,5 @@
+package MathOps;
+
 import java.util.Arrays;
 //---------------------------------Mathematical MEAN calculator of random 10 values
 public class FindMathMean {

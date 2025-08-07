@@ -1,3 +1,5 @@
+package MathOps;
+
 import java.util.Scanner;
 //--------------------------------four operations calculator
 public class Calculator {
